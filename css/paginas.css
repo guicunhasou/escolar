@@ -1,0 +1,73 @@
+.pagina-cabecalho {
+  padding: 72px 0 48px;
+  background:
+    radial-gradient(circle at top left, rgba(54, 165, 221, 0.12), transparent 28rem),
+    var(--surface-soft);
+}
+
+.pagina-etiqueta {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: var(--blue-deep);
+  background: rgba(54, 165, 221, 0.12);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.pagina-cabecalho h1 {
+  margin: 0 0 16px;
+  color: var(--blue-deep);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+.pagina-cabecalho p {
+  max-width: 680px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.pagina-conteudo {
+  padding: 56px 0 72px;
+}
+
+.pagina-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.pagina-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.pagina-card h2 {
+  margin: 0 0 12px;
+  color: var(--blue-deep);
+  font-size: 1.35rem;
+}
+
+.pagina-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.pagina-lista-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.pagina-lista-cards .pagina-card {
+  flex: 1 1 280px;
+}

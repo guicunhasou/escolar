@@ -1,0 +1,23 @@
+:root {
+  --blue: #1662c8;
+  --blue-light: #36a5dd;
+  --blue-dark: #00609e;
+  --blue-deep: #025699;
+  --yellow: #eeeb00;
+  --orange: #f8b31a;
+  --white: #ffffff;
+
+  --text: #222b3a;
+  --muted: #626b7a;
+  --text-soft: #5F6B7A;
+  --surface: #ffffff;
+  --surface-soft: #f8fafd;
+  --border: #e8edf5;
+
+  --shadow: 0 12px 30px rgba(2, 86, 153, 0.1);
+  --radius: 14px;
+  --container: 1180px;
+
+  --font-main: "Lexend Deca", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --transition: 0.3s ease;
+}

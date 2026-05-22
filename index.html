@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Escola Municipal Afonso do Carmo Bastos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="css/principal.css" />
+</head>
+
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a class="marca" href="#" aria-label="Página inicial da escola">
+        <img class="marca-logo" src="assets/logo-emacb.webp" alt="Logo da Escola Municipal Afonso do Carmo Bastos">
+
+        <span class="marca-texto">
+          <strong>Escola Municipal<br>Afonso do Carmo Bastos</strong>
+          <span>Pernambuco</span>
+        </span>
+      </a>
+
+      <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="menu-principal" aria-label="Menu principal">
+        <a class="ativo" href="#" aria-current="page">Início</a>
+        <a href="paginas/escola.html">A Escola</a>
+        <a href="paginas/comunicados.html">Comunicados</a>
+        <a href="paginas/gestao-a-vista.html">Gestão à Vista</a>
+        <a href="paginas/contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="aviso" aria-label="Aviso importante">
+      <div class="container aviso-barra">
+        <img src="assets/icones/sino.webp" alt="" aria-hidden="true">
+
+        <p>
+          <strong>AVISO IMPORTANTE:</strong>
+          Reunião Família-Escola em 25/05/2026 às 19:00 horas.
+        </p>
+
+        <button class="botao-fechar-aviso" type="button" aria-label="Fechar aviso">×</button>
+      </div>
+    </section>
+
+    <section class="carrossel" aria-label="Destaque principal">
+      <div class="container carrossel-container">
+        <button class="carrossel-seta carrossel-seta-anterior" type="button" aria-label="Slide anterior">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="m15 18-6-6 6-6"></path>
+          </svg>
+        </button>
+
+        <article class="carrossel-card" id="carrossel-card">
+          <div class="carrossel-conteudo">
+            <h1 id="carrossel-titulo">Educação que transforma vidas e constrói futuros.</h1>
+            <p id="carrossel-texto">Compromisso, respeito e aprendizado todos os dias.</p>
+            <span class="carrossel-linha" aria-hidden="true"></span>
+          </div>
+        </article>
+
+        <button class="carrossel-seta carrossel-seta-proxima" type="button" aria-label="Próximo slide">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </button>
+
+        <div class="carrossel-indicadores" aria-label="Navegação dos slides">
+          <button class="ativo" type="button" aria-label="Ir para o slide 1"></button>
+          <button type="button" aria-label="Ir para o slide 2"></button>
+          <button type="button" aria-label="Ir para o slide 3"></button>
+          <button type="button" aria-label="Ir para o slide 4"></button>
+          <button type="button" aria-label="Ir para o slide 5"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="acessos-rapidos" aria-labelledby="titulo-acessos">
+      <div class="container">
+        <h2 id="titulo-acessos">Acessos rápidos</h2>
+
+        <div class="grade-cards">
+
+          <a class="cartao-acesso" href="paginas/escola.html">
+            <img class="cartao-acesso-icone" src="assets/icones/escola.webp" alt="" aria-hidden="true">
+            <strong>A Escola</strong>
+            <small>Nossa história, equipe e estrutura.</small>
+            <span class="cartao-acesso-seta" aria-hidden="true">❯</span>
+          </a>
+
+          <a class="cartao-acesso" href="paginas/comunicados.html">
+            <img class="cartao-acesso-icone" src="assets/icones/comunicados.webp" alt="" aria-hidden="true">
+            <strong>Comunicados</strong>
+            <small>Fique por dentro dos avisos e informações.</small>
+            <span class="cartao-acesso-seta" aria-hidden="true">❯</span>
+          </a>
+
+          <a class="cartao-acesso" href="paginas/gestao-a-vista.html">
+            <img class="cartao-acesso-icone" src="assets/icones/gestao.webp" alt="" aria-hidden="true">
+            <strong>Gestão à Vista</strong>
+            <small>Acompanhe dados e indicadores da escola.</small>
+            <span class="cartao-acesso-seta" aria-hidden="true">❯</span>
+          </a>
+
+          <a class="cartao-acesso" href="paginas/contato.html">
+            <img class="cartao-acesso-icone" src="assets/icones/contato.webp" alt="" aria-hidden="true">
+            <strong>Contato</strong>
+            <small>Fale conosco e envie sua mensagem.</small>
+            <span class="cartao-acesso-seta" aria-hidden="true">❯</span>
+          </a>
+
+          <a class="cartao-acesso" href="paginas/calendario.html">
+            <img class="cartao-acesso-icone" src="assets/icones/calendario.webp" alt="" aria-hidden="true">
+            <strong>Calendário</strong>
+            <small>Veja o calendário escolar e atividades.</small>
+            <span class="cartao-acesso-seta" aria-hidden="true">❯</span>
+          </a>
+
+          <a class="cartao-acesso" href="paginas/blog.html">
+            <img class="cartao-acesso-icone" src="assets/icones/eventos.webp" alt="" aria-hidden="true">
+            <strong>Eventos</strong>
+            <small>Confira os eventos e ações da escola.</small>
+            <span class="cartao-acesso-seta" aria-hidden="true">❯</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div class="rodape-contato">
+        <div class="rodape-contato-item">
+          <img class="rodape-icone" src="assets/icones/localizacao.webp" alt="" aria-hidden="true">
+          <p>Rua da Educação, 232<br>CEP: 88815-787<br>Pernambuco</p>
+        </div>
+
+        <div class="rodape-contato-item">
+          <img class="rodape-icone" src="assets/icones/telefone.webp" alt="" aria-hidden="true">
+          <p>(81) 6774-3439</p>
+        </div>
+
+        <div class="rodape-contato-item">
+          <img class="rodape-icone" src="assets/icones/email.webp" alt="" aria-hidden="true">
+          <p>escolaafonsobastos@educacao.pe.gov.br</p>
+        </div>
+      </div>
+
+      <div class="rodape-marca">
+        <img class="rodape-logo" src="assets/logo-emacb.webp" alt="Logo da Escola Municipal Afonso do Carmo Bastos">
+
+        <div class="rodape-texto">
+          <strong>Escola Municipal<br>Afonso do Carmo Bastos</strong>
+          <p>Pernambuco</p>
+          <span>Versão 0.0.1</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
+  <script src="js/carrossel.js"></script>
+  <script src="js/principal.js"></script>
+</body>
+
+</html>
