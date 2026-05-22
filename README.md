@@ -65,3 +65,7 @@ Projeto finalizado como versão demonstrativa para portfólio.
 ## Autor
 
 Desenvolvido por [Guilherme Cunha](https://www.guicunhasou.com/).
+
+## Acesse o projeto
+
+[Visualizar site publicado](https://guicunhasou.github.io/escolar/)
