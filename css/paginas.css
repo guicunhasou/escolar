@@ -173,3 +173,11 @@
   color: var(--blue-deep);
   background: rgba(54, 165, 221, 0.12);
 }
+
+.carrossel-card-link {
+  cursor: pointer;
+}
+
+.blog-card {
+  scroll-margin-top: 120px;
+}

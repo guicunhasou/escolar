@@ -2,27 +2,32 @@ const slides = [
   {
     titulo: "Educação que transforma vidas e constrói futuros.",
     texto: "Compromisso, respeito e aprendizado todos os dias.",
-    imagem: "assets/carrossel/1.webp"
+    imagem: "assets/carrossel/1.webp",
+    link: null
   },
   {
     titulo: "Celebração do Dia das Mães na escola",
     texto: "Um momento de afeto, acolhimento e integração entre estudantes, famílias e comunidade escolar.",
-    imagem: "assets/carrossel/2.webp"
+    imagem: "assets/carrossel/2.webp",
+    link: "paginas/blog.html#cha-dia-das-maes"
   },
   {
     titulo: "Apresentação de trabalhos sobre o Dia da Terra",
     texto: "Estudantes compartilhando aprendizados sobre cuidado com o planeta e preservação do meio ambiente.",
-    imagem: "assets/carrossel/3.webp"
+    imagem: "assets/carrossel/3.webp",
+    link: "paginas/blog.html#dia-da-terra"
   },
   {
     titulo: "Roda de leitura sobre Tiradentes",
     texto: "Uma atividade de leitura e conversa para aproximar os estudantes da história do Brasil e da cidadania.",
-    imagem: "assets/carrossel/4.webp"
+    imagem: "assets/carrossel/4.webp",
+    link: "paginas/blog.html#tiradentes"
   },
   {
     titulo: "Documentário sobre os povos originários",
     texto: "Estudantes aprendendo sobre cultura, memória, respeito e valorização da diversidade brasileira.",
-    imagem: "assets/carrossel/5.webp"
+    imagem: "assets/carrossel/5.webp",
+    link: "paginas/blog.html#povos-originarios"
   }
 ];
 
@@ -48,6 +53,28 @@ function atualizarIndicadores() {
   });
 }
 
+function atualizarLinkSlide(slide) {
+  if (slide.link) {
+    carrosselCard.setAttribute("role", "link");
+    carrosselCard.setAttribute("tabindex", "0");
+    carrosselCard.setAttribute("aria-label", `Abrir publicação: ${slide.titulo}`);
+    carrosselCard.classList.add("carrossel-card-link");
+  } else {
+    carrosselCard.removeAttribute("role");
+    carrosselCard.removeAttribute("tabindex");
+    carrosselCard.removeAttribute("aria-label");
+    carrosselCard.classList.remove("carrossel-card-link");
+  }
+}
+
+function abrirLinkSlide() {
+  const link = slides[slideAtual]?.link;
+
+  if (link) {
+    window.location.href = link;
+  }
+}
+
 function atualizarConteudoSlide(indice) {
   slideAtual = obterIndiceSlide(indice);
 
@@ -55,6 +82,8 @@ function atualizarConteudoSlide(indice) {
 
   carrosselTitulo.textContent = slide.titulo;
   carrosselTexto.textContent = slide.texto;
+
+  atualizarLinkSlide(slide);
 
   carrosselCard.style.backgroundImage = `
     linear-gradient(
@@ -123,6 +152,15 @@ function configurarEventosCarrossel() {
       renderizarSlide(indice);
       reiniciarCarrossel();
     });
+  });
+
+  carrosselCard.addEventListener("click", abrirLinkSlide);
+
+  carrosselCard.addEventListener("keydown", (evento) => {
+    if (evento.key === "Enter" || evento.key === " ") {
+      evento.preventDefault();
+      abrirLinkSlide();
+    }
   });
 }
 
