@@ -434,3 +434,9 @@
     font-size: 0.74rem;
   }
 }
+
+@media (max-width: 768px) {
+  .blog-imagem {
+    height: 200px;
+  }
+}
